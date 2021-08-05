@@ -4,8 +4,9 @@
 ## Initial setup
 
 1. install dependencies `docker run --rm -u "$(id -u):$(id -g)" -v $(pwd):/opt -w /opt laravelsail/php80-composer:latest composer install --ignore-platform-reqs`
-2. run project `./vendor/bin/sail up`
-3. run migrations: `./vendor/bin/sail artisan migrate`
-4. run seeds `./vendor/bin/sail artisan db:seed`
-5. run command `./vendor/bin/sail artisan app:generateDailyTasksSets`
+2. create `.env` and fill
+3. run project `./vendor/bin/sail up`
+4. run migrations: `./vendor/bin/sail artisan migrate`
+5. run seeds `./vendor/bin/sail artisan db:seed`
+6. run command `./vendor/bin/sail artisan app:generateDailyTasksSets`
 
